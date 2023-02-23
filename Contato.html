@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-    <h1>Entre em contato comigo</h1>
-    
-    <ul>
-        🙉 <li>
-            <a href="index.html">Home</a>"
+    <ul id="Menu">
+        <li>
+            <a href="index.html">Home</a>
         </li>
-            <li>
-                <a href="Contato.html">Contato</a>"
-            </li>
+        <li>
+           <a href="Contato.html">Contato</a> 
+        </li>
     </ul>
-<
-    <form>
-        <br>
-        <br>
+    <h1>Entre em contato comigo</h1>
+    <div>
+        <h2>mande messagem</h2>
 
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome">
-        <br>
-        <br>
+        <form action="">
+            <label for="Nome">Nome</label>
+            <input type="text" id="Nome" onkeyup="validaNome()">
+            <div id="txtNome"></div> 
+            <br>
+            <label for="Email">Email</label>
+            <input type="text"id="Email" onkeyup="validaEmail()">
+            <div id="txtEamil"></div> 
+            
+            <br>
+            <label for="Assunto">Assunto</label>
+            <textarea name="Assunto" id="Assunto" cols="30" rows="5" onkeyup="validaAssunto()"></textarea>
+            <div id="txtAssunto"></div>
+            
+            <br>
+            <button onclick="enviar">Enviar</button>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email">
-        <br>
-        <br>
-
-        <label for="assunto">Assunto:</label><<br>
-        <textarea name="assunto" id="assunto" cols="60" rows="5" ></textarea>
-        <br> 
-        <br>
-        <button>Enviar</button>
         </form>
-
-        <h2>Minha localização</h2>
-
-        <p>
-            Rua: Maria luiza 21
-        </p>
-        <p>
-            Taboão da Serra -Sp
-        </p>
+        <div>
+            <p>Rua: Maria Luiza n,27</p>
+            <p>Taboão da serra-Sp</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.199071383397!2d-46.78136458502093!3d-23.63304078464746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5479a0d1cf39%3A0x842ae104829120d8!2sR.%20Maria%20Lu%C3%ADsa%20Freitas%20Silva%2C%2027%20-%20Parque%20Pinheiros%2C%20Tabo%C3%A3o%20da%20Serra%20-%20SP%2C%2006766-340!5e0!3m2!1spt-BR!2sbr!4v1676852705444!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
         
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.1961965083674!2d-46.78142968554115!3d-23.633143770130953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5479a7475da5%3A0xf25a42b1adbf0178!2sR.%20Maria%20Lu%C3%ADsa%20Freitas%20Silva%2C%2021%20-%20Parque%20Pinheiros%2C%20Tabo%C3%A3o%20da%20Serra%20-%20SP%2C%2006766-340!5e0!3m2!1spt-BR!2sbr!4v1676568132930!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
+        </div>
+        <div>
+            <a href="https://github.com/Miguel-hub22">Meu github
+                <img class="p-10" src="assets/img/logotipo-do-github.png" alt="logo do github">
+            </a>
+            <a href="https://www.linkedin.com/in/miguel-alves-71303a263/">
+                <img class="p-10" src="assets/img/linkedin.png" alt="logo do linkedin">
+            </a>
+        </div>
+        <p>
+            todos os direitos reservados:Miguel
+        </p>
+    </div>
+
+    <script src="assets/js/script.js"></script>
     
 </body>
 </html>
