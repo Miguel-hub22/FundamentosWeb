@@ -9,53 +9,80 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <ul id="Menu">
+    <ul class="menu">
         <li>
             <a href="index.html">Home</a>
         </li>
         <li>
-           <a href="Contato.html">Contato</a> 
+            <a href="Contato.html">Contato</a> 
         </li>
     </ul>
-    <h1>Entre em contato comigo</h1>
-    <div>
-        <h2>mande messagem</h2>
+    <h1 class="center">Entre em contato comigo</h1>
 
-        <form action="">
-            <label for="Nome">Nome</label>
-            <input type="text" id="Nome" onkeyup="validaNome()">
-            <div id="txtNome"></div> 
-            <br>
-            <label for="Email">Email</label>
-            <input type="text"id="Email" onkeyup="validaEmail()">
-            <div id="txtEamil"></div> 
-            
-            <br>
-            <label for="Assunto">Assunto</label>
-            <textarea name="Assunto" id="Assunto" cols="30" rows="5" onkeyup="validaAssunto()"></textarea>
-            <div id="txtAssunto"></div>
-            
-            <br>
-            <button onclick="enviar">Enviar</button>
+    <div class="container">
 
-        </form>
         <div>
-            <p>Rua: Maria Luiza n,27</p>
-            <p>Taboão da serra-Sp</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.199071383397!2d-46.78136458502093!3d-23.63304078464746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5479a0d1cf39%3A0x842ae104829120d8!2sR.%20Maria%20Lu%C3%ADsa%20Freitas%20Silva%2C%2027%20-%20Parque%20Pinheiros%2C%20Tabo%C3%A3o%20da%20Serra%20-%20SP%2C%2006766-340!5e0!3m2!1spt-BR!2sbr!4v1676852705444!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
+            <form action=""><br>
+                <br>
+                <br>
+                <br>
+                <h3>Mande  uma messagem</h3>
+                <label for="Nome">Nome</label><br>
+                <input type="text" id="Nome" onkeyup="validaNome()">
+                <div id="txtNome"></div> 
+                <br>
+                <br>
+                <label for="Email">Email</label><br>
+                <input type="text"id="Email" onkeyup="validaEmail()">
+                <div id="txtEamil"></div> 
+                
+                <br>
+                <label for="Assunto">Assunto</label><br>
+                <textarea name="Assunto" id="Assunto" cols="30" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
+                
+                <br>
+                <button onclick="enviar">Enviar</button>
+    
+            </form>
+        </div>
+
+        <div class="marg">
+            
+    <br>
+    <br>
+    <br>
+            <p>Rua: Maria Luiza n,27
+
+            </p>
+            <p>Taboão da serra-Sp
+
+            </p>
+            <iframe class="tama" src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.199071383397!2d-46.78136458502093!3d-23.63304078464746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5479a0d1cf39%3A0x842ae104829120d8!2sR.%20Maria%20Lu%C3%ADsa%20Freitas%20Silva%2C%2027%20-%20Parque%20Pinheiros%2C%20Tabo%C3%A3o%20da%20Serra%20-%20SP%2C%2006766-340!5e0!3m2!1spt-BR!2sbr!4v1676852705444!5m2!1spt-BR!2sbr" width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
         
+
         </div>
+    </div>
+    
+        
+        
         <div>
-            <a href="https://github.com/Miguel-hub22">Meu github
-                <img class="p-10" src="assets/img/logotipo-do-github.png" alt="logo do github">
-            </a>
-            <a href="https://www.linkedin.com/in/miguel-alves-71303a263/">
-                <img class="p-10" src="assets/img/linkedin.png" alt="logo do linkedin">
-            </a>
-        </div>
-        <p>
-            todos os direitos reservados:Miguel
-        </p>
+            <hr>
+    <div class="center">
+        
+        <a href="https://github.com/Miguel-hub22" target="_blank">
+            <img class="p-10 p30" src="assets/img/logotipo-do-github.png" alt="logo do github">
+        </a>
+        <a href="https://www.linkedin.com/in/miguel-alves-71303a263/" target="_blank">
+            <img class="p-10 p30" src="assets/img/linkedin.png" alt="logo do linkedin">
+        </a>
+    </div>
+    <hr>
+<footer>
+    <p class="center">
+        todos os direitos reservados: Miguel &copy;
+    </p>
+</footer>
     </div>
 
     <script src="assets/js/script.js"></script>
